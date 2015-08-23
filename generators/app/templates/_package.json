@@ -1,0 +1,35 @@
+{
+  "name": "<%= (module_name) %>",
+  "version": "0.0.1",
+  "description": "<%= (description) %>",
+  "main": "<%= (main) %>",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "NODE_ENV=test istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= (repository_url) %>"
+  },
+  "author": "<%= (author) %>",
+  "license": "<%= license %>",
+  "bugs": {
+    "url": "https://github.com/<%= (module_name) %>/issues"
+  },
+  "keywords": "<%= (keywords) %>",
+  "homepage": "<%= (homepage) %>",
+  "dependencies":{
+
+  },
+  "engines": {
+    "npm": ">=2.7.0"
+  },
+  "devDependencies": {
+    "@springworks/test-harness": "^1.0.3",
+    "eslint": "0.23.0",
+    "eslint-config-springworks": "2.1.2",
+    "eslint-plugin-mocha": "0.3.0",
+    "eslint-plugin-should-promised": "^1.0.3",
+    "mocha": "~2.2.5"
+  }
+}
